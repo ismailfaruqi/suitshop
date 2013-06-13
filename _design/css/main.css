@@ -1,0 +1,695 @@
+/*******************************************************************************
+
+    Title :  SuitShop
+    Date  :  June 2013
+    Author:  Suitmedia (http://www.suitmedia.com)
+
+********************************************************************************
+
+    1 Resets
+    2 Font-face
+    3 Basic styles
+    4 Common styles
+    5 Header
+    6 Content
+    6.1 Page: Home
+    7 Footer
+    8 Non Semantics helper class
+    9 Print
+    10 Plugins
+
+*******************************************************************************/
+
+
+/* 1 Resets
+------------------------------------------------------------------------------*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    background: #FFD17D;
+    border-bottom: solid 1px #FFCC6F;
+    color: #000;
+    font-size: .8em;
+    margin: 0 0 .2em;
+    padding: .4em 0;
+    text-align: center;
+}
+
+
+/* 2 Font-face
+------------------------------------------------------------------------------*/
+
+
+/* 3 Basic styles
+------------------------------------------------------------------------------*/
+
+body {
+    color: #222;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+a {     
+    color: #551a8b;
+    text-decoration: none;
+}
+
+a:hover { 
+    color: #09f; 
+}
+
+a:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+label, 
+input, 
+button, 
+select, 
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+}
+
+
+/* 4 Common styles
+------------------------------------------------------------------------------*/
+
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -241px;
+}
+
+.push,
+.footer-main {
+    height: 241px;
+}
+
+/* 5 Header
+------------------------------------------------------------------------------*/
+
+.header-main {
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+}
+
+.nav-user {
+    background: #e33c47;
+    margin-bottom: 20px;
+    height: 30px;
+    text-align: right;
+}
+
+.nav-user li {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 30px;    
+}
+
+.nav-user li a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.nav-user .cart {
+    margin-left: 20px;
+}
+
+.nav-user .cart i {
+    margin-right: 3px;
+}
+
+.logo {
+    /*background: #c94c0f;*/
+    /*color: #fff;*/
+    display: block;
+    float: left;
+    /*font-size: 24px;*/
+    /*line-height: 100px;*/
+    text-align: center;
+}
+
+/*.logo:hover {
+    background: #a23d0c;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all ease .3s;
+       -moz-transition: all ease .3s;
+        -ms-transition: all ease .3s;
+         -o-transition: all ease .3s;
+            transition: all ease .3s;    
+}*/
+
+.nav-main {
+    float: right;
+}
+
+.nav-main li {
+    float: left;
+    margin-left: 1px;
+}
+
+.nav-main li:first-child {
+    margin-left: 0;
+}
+
+.nav-main li a {
+    background: #f5f5f5;
+    border-bottom: 5px solid #cdcdcd;
+    color: #888;
+    display: block;
+    font-family: 'Lora', serif;
+    /*font-family: 'Josefin Slab', sans-serif;    */
+    font-size: 1.2em;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    -webkit-transition: all ease .3s;
+       -moz-transition: all ease .3s;
+        -ms-transition: all ease .3s;
+         -o-transition: all ease .3s;
+            transition: all ease .3s;
+    width: 123px;
+}
+
+.nav-main li a:hover {
+    background: #f3f2ef;
+    border-color: #1799dd;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-main li:first-child a {
+    border-radius: 8px 0 0 8px;
+}
+
+.nav-main li:last-child a {
+    border-radius: 0 5px 5px 0;
+}
+
+.form-user {
+    text-align: left;
+}
+
+.form-user input {
+    height: auto;
+}
+
+.table .a-right {
+    text-align: right;
+}
+
+
+/* 6 Content
+------------------------------------------------------------------------------*/
+
+.content-main {
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.page-title {
+    border-bottom: 5px solid #e2e8ee;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Lora', serif;
+    /*font-family: 'Josefin Slab', serif;    */
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.section-title {
+    border-bottom: 1px solid #ccc;
+    margin: 30px 0 10px;
+    position: relative;
+    /*text-align: center;*/
+}
+
+.section-title h2 {
+    /*font-family: 'Josefin Slab', serif;    */
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    /*text-transform: uppercase;*/
+}
+
+.banner-ads {
+    height: 500px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.banner-ads img {
+    width: 100%;
+}
+
+
+/* 6.1 Page: Home
+------------------------------------------------------------------------------*/
+
+.product-info {
+    margin-bottom: 50px;
+}
+
+.product-list {
+    margin-bottom: 10px;
+}
+
+.product-list li {
+    float: left;
+}
+
+.product-list li > a:hover .image {
+    background: #1799dd;
+}
+
+.product-list li > a:hover {
+    text-decoration: none;
+}
+
+.product-list .image {
+    background: #eee;
+    height: 214px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+.product-list .description {
+    font-size: 12px;
+    text-align: center;
+}
+
+.product-list .price {
+    background: rgba(255,255,255,0.8);
+    /*font-family: 'Josefin Slab', sans-serif;*/
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;    
+    top: 0;
+}
+
+
+/* 6.2 Page: Product details
+------------------------------------------------------------------------------*/
+
+/*.product-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}*/
+
+.product-title .stock {
+    color: #1799dd;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.product-details .product-description {
+    /*font-family: 'Josefin Slab', sans-serif;*/
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.thumbnails {
+    margin-top: 20px;
+}
+
+.product-price {
+    /*font-family: 'Josefin Slab', sans-serif;*/
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+/* 6.3 Page: About
+------------------------------------------------------------------------------*/
+
+.about-section-content {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.about-section-content img {
+    margin-bottom: 20px;
+}
+
+
+/* 6.4 Page: Contact
+------------------------------------------------------------------------------*/
+
+.addr {
+    font-size: 28px;
+    text-align: center;
+}
+
+.addr .org {
+    font-weight: 700;
+}
+
+.addr span {
+    display: block;
+}
+
+
+/* 7 Footer
+------------------------------------------------------------------------------*/
+
+.footer-main {
+    background: #161e27;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.social-links .facebook {
+    background: url(../img/ico-facebook.png) no-repeat 50% 0;
+    padding-top: 40px;
+}
+
+.social-links .twitter {
+    background: url(../img/ico-twitter.png) no-repeat 50% 0;
+    padding-top: 40px;
+}
+
+.nav-footer {
+    color: #fff;
+    font-size: 14px;
+    list-style: disc;    
+    margin: 0 auto 20px;
+}
+
+.nav-footer li {
+    color: #fff;
+    display: inline-block;
+}
+
+.nav-footer .muted {
+    color: #999;
+    font-size: 18px;
+}
+
+.nav-footer a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.nav-footer p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.nav-footer li:first-child a {
+    border-left: none;
+}
+
+.footer-main .copyright {
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+
+/* 8 Non Semantics helper class
+------------------------------------------------------------------------------*/
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 9 Print
+------------------------------------------------------------------------------*/
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: .5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/* 10 Plugins
+------------------------------------------------------------------------------*/
+
+.modal {
+    border: 10px solid #e33c47;
+    border-radius: 0;
+}
+
+.modal h2 {
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    margin-bottom: 0;
+    text-align: center;
+    /*text-transform: uppercase;*/
+}
+
+.carousel-control {
+    border: none;
+    border-radius: 0;
+    font-size: 80px;
+    height: 80px;
+    line-height: 58px;
+    opacity: .2;
+    width: 80px;
+}
+
+.carousel-control.left {
+    left: -80px;
+}
+
+.carousel-control.right {
+    right: -80px;
+}
+
+
+
+
+
+
+
+
