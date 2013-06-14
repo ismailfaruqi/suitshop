@@ -170,12 +170,15 @@ body {
 ------------------------------------------------------------------------------*/
 
 .header-main {
-    margin: 0 0 20px;
+    background: #eee url(../img/bg-pattern-1.png) repeat;
+    border-bottom: 1px solid #ddd;
+    /**/
+    margin: 0 0 30px;
     padding-bottom: 20px;
 }
 
 .nav-user {
-    background: #e33c47;
+    background: #dc3a62;
     margin-bottom: 20px;
     height: 30px;
     text-align: right;
@@ -186,6 +189,10 @@ body {
     display: inline-block;
     font-size: 12px;
     line-height: 30px;    
+}
+
+.nav-user li:first-child {
+    margin-right: 20px;
 }
 
 .nav-user li a {
@@ -202,12 +209,14 @@ body {
 }
 
 .logo {
-    /*background: #c94c0f;*/
+    background: #fcfcfc;
+    border-radius: 5px;
     /*color: #fff;*/
     display: block;
     float: left;
     /*font-size: 24px;*/
     /*line-height: 100px;*/
+    padding: 20px;
     text-align: center;
 }
 
@@ -236,8 +245,8 @@ body {
 }
 
 .nav-main li a {
-    background: #f5f5f5;
-    border-bottom: 5px solid #cdcdcd;
+    background: #fdfdfd;
+    border-bottom: 5px solid #ddd;
     color: #888;
     display: block;
     font-family: 'Lora', serif;
@@ -251,13 +260,14 @@ body {
         -ms-transition: all ease .3s;
          -o-transition: all ease .3s;
             transition: all ease .3s;
-    width: 123px;
+    width: 135px;
 }
 
 .nav-main li a:hover {
-    background: #f3f2ef;
+    background: #fcfcfc;
     border-color: #1799dd;
     color: #000;
+    opacity: .8;
     text-decoration: none;
 }
 
@@ -325,7 +335,6 @@ body {
 }
 
 .banner-ads {
-    height: 500px;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -421,22 +430,21 @@ body {
 /* 6.3 Page: About
 ------------------------------------------------------------------------------*/
 
-.about-section img {
-    margin-bottom: 20px;
+.about-section .signature {
+    text-align: right;
 }
 
 
 /* 6.4 Page: Contact
 ------------------------------------------------------------------------------*/
 
-#map-canvas {
+.map {
     height: 300px;
     margin-bottom: 20px;
 }
 
 .vcard {
     font-size: 16px;
-    text-align: center;
 }
 
 .vcard .org {

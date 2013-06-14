@@ -13,13 +13,14 @@ var Site = {
      */
     init: function() {
         $('html').removeClass('no-js');
-        Site.feature1();
+        Site.zoomImage();
+        Site.featureSlide();
     },
     
     /**
-     * Site featured
+     * Zoom Image
      */
-    feature1: function() {
+    zoomImage: function() {
         $("#img_01").elevateZoom({gallery:'gal1', cursor: 'pointer', galleryActiveClass: 'active'}); 
 
         //pass the images to Fancybox
@@ -28,7 +29,16 @@ var Site = {
             $.fancybox(ez.getGalleryList());
           return false;
         }); 
-   }
+    },
+
+    /**
+     * Feature Slide
+     */
+    featureSlide: function() {
+       
+    },
+
+
 
 }
 
