@@ -13,6 +13,9 @@
     5 Header
     6 Content
     6.1 Page: Home
+    6.2 Page: Product Details
+    6.3 Page: About
+    6.4 Page: Contact
     7 Footer
     8 Non Semantics helper class
     9 Print
@@ -150,6 +153,7 @@ body {
 }
 
 .wrap {
+    background: #fff;
     min-height: 100%;
     height: auto !important;
     height: 100%;
@@ -160,6 +164,7 @@ body {
 .footer-main {
     height: 241px;
 }
+
 
 /* 5 Header
 ------------------------------------------------------------------------------*/
@@ -283,6 +288,11 @@ body {
 .content-main {
     margin-bottom: 20px;
     padding-top: 20px;
+}
+
+.shrink-section-content {
+    margin: 0 auto;
+    width: 600px;
 }
 
 .page-title {
@@ -411,12 +421,7 @@ body {
 /* 6.3 Page: About
 ------------------------------------------------------------------------------*/
 
-.about-section-content {
-    margin: 0 auto;
-    width: 600px;
-}
-
-.about-section-content img {
+.about-section img {
     margin-bottom: 20px;
 }
 
@@ -424,17 +429,25 @@ body {
 /* 6.4 Page: Contact
 ------------------------------------------------------------------------------*/
 
-.addr {
-    font-size: 28px;
+#map-canvas {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.vcard {
+    font-size: 16px;
     text-align: center;
 }
 
-.addr .org {
-    font-weight: 700;
+.vcard .org {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: normal;
 }
 
-.addr span {
-    display: block;
+.vcard a {
+    color: #09f;
+    text-decoration: underline;
 }
 
 
