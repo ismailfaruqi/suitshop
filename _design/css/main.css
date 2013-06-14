@@ -170,9 +170,8 @@ body {
 ------------------------------------------------------------------------------*/
 
 .header-main {
-    background: #fff url(../img/bg-pattern-1.png) repeat;
+    background: #fff url(../img/bg-pattern.png) repeat;
     border-bottom: 1px solid #ececec;
-    /**/
     padding-bottom: 20px;
 }
 
