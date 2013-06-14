@@ -14,7 +14,7 @@ var Site = {
     init: function() {
         $('html').removeClass('no-js');
         Site.zoomImage();
-        Site.featureSlide();
+        // Site.featureSlide();
     },
     
     /**
@@ -23,7 +23,6 @@ var Site = {
     zoomImage: function() {
         $("#img_01").elevateZoom({gallery:'gal1', cursor: 'pointer', galleryActiveClass: 'active'}); 
 
-        //pass the images to Fancybox
         $("#img_01").bind("click", function(e) {  
           var ez =   $('#zoom_03').data('elevateZoom'); 
             $.fancybox(ez.getGalleryList());
@@ -35,7 +34,7 @@ var Site = {
      * Feature Slide
      */
     featureSlide: function() {
-       
+       // $('#featureSlide').carousel();
     },
 
 

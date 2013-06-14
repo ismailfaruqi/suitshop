@@ -170,10 +170,9 @@ body {
 ------------------------------------------------------------------------------*/
 
 .header-main {
-    background: #eee url(../img/bg-pattern-1.png) repeat;
-    border-bottom: 1px solid #ddd;
+    background: #fff url(../img/bg-pattern-1.png) repeat;
+    border-bottom: 1px solid #ececec;
     /**/
-    margin: 0 0 30px;
     padding-bottom: 20px;
 }
 
@@ -209,7 +208,7 @@ body {
 }
 
 .logo {
-    background: #fcfcfc;
+    background: #fff;
     border-radius: 5px;
     /*color: #fff;*/
     display: block;
@@ -245,26 +244,26 @@ body {
 }
 
 .nav-main li a {
-    background: #fdfdfd;
+    background: #fff;
     border-bottom: 5px solid #ddd;
     color: #888;
     display: block;
-    font-family: 'Lora', serif;
+    /*font-family: 'Lora', serif;*/
     /*font-family: 'Josefin Slab', sans-serif;    */
-    font-size: 1.2em;
-    height: 100px;
-    line-height: 100px;
+    font-size: 1em;
+    height: 101px;
+    line-height: 101px;
     text-align: center;
     -webkit-transition: all ease .3s;
        -moz-transition: all ease .3s;
         -ms-transition: all ease .3s;
          -o-transition: all ease .3s;
             transition: all ease .3s;
-    width: 135px;
+    width: 123px;
 }
 
 .nav-main li a:hover {
-    background: #fcfcfc;
+    background: #fafafa;
     border-color: #1799dd;
     color: #000;
     opacity: .8;
@@ -296,8 +295,7 @@ body {
 ------------------------------------------------------------------------------*/
 
 .content-main {
-    margin-bottom: 20px;
-    padding-top: 20px;
+    padding: 40px 0 20px;
 }
 
 .shrink-section-content {
