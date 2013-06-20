@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/HTML5Shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<a href="#" class="brand">Suit Shop CMS</a>
+					<ul class="nav pull-right">
+						<li class="active"><a href="#">Product List</a></li>
+						<li><a href="#">Content Management</a></li>
+						<li><a href="#">Register</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, Admin<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="icon-user"></i> Profile</a></li>
+								<li><a href="#"><i class="icon-cog"></i> Change Password</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="icon-lock"></i> Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="body">
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a> <span class="divider">/</span>
+						</li>
+						<li><a href="#">Product List</a> <span class="divider">/</span></li>
+						<li>
+							Edit Product
+						</li>
+					</ul>
+					<!-- <h4>Edit Product</h4> -->
+					<hr>
+					<div class="alert alert-error">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, enim, placeat libero neque nam deserunt at fuga dolor asperiores provident molestias quam temporibus commodi dignissimos modi quod eveniet aut magni.</strong>
+					</div>
+					<form class="form-horizontal form-edit-product">
+						<div class="control-group">
+							<label class="control-label" for="inputName">Product Name</label>
+					    	<div class="controls">
+					      		<input type="text" id="inputName" class="input-block-level">
+					    	</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="inputDesc">Description</label>
+					    	<div class="controls">
+					      		<textarea name="inputDesc" id="inputDesc" cols="30" rows="10" class="input-block-level"></textarea>
+					    	</div>
+						</div>
+						<div class="control-group">
+							<label for="inputPrice" class="control-label">Price</label>
+							<div class="controls">
+								<input type="text" name="inputPrice" id="inputPrice">
+							</div>
+						</div>
+						<div class="control-group">
+							<label for="inputStock" class="control-label">Stock</label>
+							<div class="controls">
+								<input type="text" name="inputStock" id="inputStock">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="inputImg">Update Image</label>
+					    	<div class="controls">
+					      		<input type="file" name="inputImg" id="inputImg" class="input-block-level">
+					      		<img src="img/product-1-small.jpg" alt="">
+					    	</div>
+						</div>
+						<div class="control-group pull-right">
+							<a href="#" class="btn">Cancel</a>
+							<input type="submit" value="Update" class="btn btn-success">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="row">
+				<div class="span12">
+					<hr>
+					<p>&copy; 2013 - Suit Shop</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+		
+	
+	<script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

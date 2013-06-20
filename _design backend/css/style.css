@@ -1,0 +1,73 @@
+
+ body{
+ 	//background: #F4F4F0;
+ }
+
+ .main-header{
+ 	margin: 1em 0 0;
+ 	font-size: 12px;
+ }
+ 
+ .modal-login{
+ 	margin-left: -160px;
+ 	width: 320px;
+ }
+
+ .modal-login .modal-header,
+ .modal-login .modal-body,
+ .modal-login .modal-footer{
+ 	padding: 1em 1em;
+ }
+
+ .modal-login .modal-header{
+ 	background: url('../img/logo.png') no-repeat;
+ 	background-position: 90% 30%;
+ 	background-size: 30%;
+ }
+
+ .main-nav{
+ 	font-size: 12px;
+ }
+
+ .main-nav .icon-chevron-right{
+ 	float: right;
+ 	opacity: .1;
+ }
+
+ .main-nav li:hover .icon-chevron-right{
+ 	opacity: .3;
+ }
+
+ .last-update img{
+ 	width: 50%;
+ }
+
+ .product-list{
+ 	font-size: 12px;
+ }
+
+ .form-edit-product{
+ 	
+ }
+
+ .form-edit-product .control-label{
+ 	text-align: left;
+ }
+
+ .form-edit-product input[type="file"]{
+ 	vertical-align: top;
+ }
+
+ .input-unstyled{
+ 	border: none;
+ }
+
+ .control-label.align-left{
+ 	text-align: left;
+ }
+
+ footer{
+ 	color: #666;
+ 	font-size: 12px;
+ 	text-align: center;
+ }
